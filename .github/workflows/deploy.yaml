@@ -60,4 +60,4 @@ jobs:
           docker stop fastapi-ml || true
           docker rm fastapi-ml || true
           docker pull $ECR_REGISTRY/$ECR_REPOSITORY:latest
-          docker run -d -p 80:8000 --name fastapi-ml $ECR_REGISTRY/$ECR_REPOSITORY:latest
+          docker run -d -p 5000:5000 --name fastapi-ml $ECR_REGISTRY/$ECR_REPOSITORY:latest
